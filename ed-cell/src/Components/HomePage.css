@@ -1,0 +1,80 @@
+.header1 p{
+    color: white;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.header1 h1{
+    color: orange;
+    font-size: 50;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.middle
+{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    width: 72%;
+    border: 1px dashed orange;
+    border-radius: 15px;
+    opacity: 1; /* Adjust the opacity as needed */
+    z-index: -2;
+    background: rgb(62, 62, 62);
+}
+
+#text
+{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-left: 15px;
+}
+
+.middle span
+{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: orange;
+}
+.footer
+{
+    display: flex;
+    justify-content: center;
+}
+
+.footer button
+{
+    width: 200px;
+    height: 45px;
+    background-color: orange;
+    border-radius: 12px;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+    cursor: pointer;
+    margin-top: 100px;   
+}
+.row4{
+    display: flex;
+    justify-content: center;
+}
+.row4 button{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 25px;
+
+}

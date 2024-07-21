@@ -1,21 +1,26 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import Navbar from "./Components/Navbar";
-import SignUp from "./Components/SignUp.jsx";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Navbar from './Components/Navbar';
+import HomePage from './Components/HomePage.jsx';
+import SignUp from './Components/SignUp.jsx';
+import Details from './Components/Details';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-    <Navbar />
-      <div className="container">
-        
-        <SignUp />
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/details" element={<Details/>} />
+            
+          </Routes>
+        </div>
       </div>
-    </>
+    </Router>
   );
 }
 

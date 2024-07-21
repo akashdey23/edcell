@@ -1,3 +1,5 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -7,6 +9,12 @@ import edcell_img from '../assets/edcell_img.jpeg';
 import './Navbar.css';
 
 function NavScrollExample() {
+  const navigate = useNavigate();
+
+  const handleRegisterClick = () => {
+    navigate('/');
+  };
+
   return (
     <div className="navbar1">
       <Navbar expand="lg" className="bg-gray">
@@ -21,11 +29,11 @@ function NavScrollExample() {
             >
               <Nav.Link href="#action1">Home</Nav.Link>
               <Nav.Link href="#action2">Gallery</Nav.Link>
-              <Nav.Link href="#action2">Event</Nav.Link>
-              <Nav.Link href="#action2">Team</Nav.Link>
+              <Nav.Link href="#action3">Event</Nav.Link>
+              <Nav.Link href="#action4">Team</Nav.Link>
             </Nav>
             <Form className="d-flex">
-              <Button variant="outline-success">Register</Button>
+              <Button variant="outline-success" onClick={handleRegisterClick}>Register</Button>
             </Form>
           </Navbar.Collapse>
         </Container>

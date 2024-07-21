@@ -1,65 +1,59 @@
-
-
-.header1 p{
+.head1 p{
     color: white;
     font-size: 35px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
-.header1 h1{
+.head1 h1{
     color: orange;
     font-size: 50;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
+    margin-bottom: 50px;
 }
 
-.signup .middle
+.middle
 {
-    /* margin: auto; */
-    padding: 25px;
+    margin: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    width: 72%;
+    border: 1px dashed orange;
+    border-radius: 15px;
+    opacity: 1; /* Adjust the opacity as needed */
+    z-index: -2;
+    background: rgb(62, 62, 62);
 }
 
-.middle input{
-    height: 40px;
-    width: 250px;
-    margin-right: 25px;
-    background-color: burlywood;
-    border-radius: 8px; 
-    border: none;
-    color: black;
+#text
+{
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-left: 25px;
-    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-left: 15px;
 }
 
-/* .middle select{
-    height: 30px;
-    width: 250px;
-    margin-right: 25px;
-    background-color: burlywood;
-    border-radius: 8px; 
-    border: none;
-    color: black;
+.middle span
+{
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-} */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: orange;
+}
 
-.row {
+.row11{
+    margin-top: 25px;
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    margin-bottom: 20px;
-    width: 100%;
+    margin-bottom: 25px;
 }
-.row input {
-    height: 40px;
-    width: 300px;
+.row11 input{
+    height: 50px;
+    width: 400px;
     margin-right: 25px;
     background-color: burlywood;
     border-radius: 8px;
@@ -68,49 +62,65 @@
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-left: 25px;
-}
-.row select {
-    height: 40px;
-    width: 300px;
-    margin-right: 25px;
-    background-color: burlywood;
-    border-radius: 8px;
-    border: none;
-    color: black;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-left: 25px;
-    cursor: pointer;
 }
 
-.row2 select {
-    height: 40px;
-    width: auto;
+.row2{
     margin: auto;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
+.row2 input{
+    height: 80px;
+    width: 700px;
+    /* margin-right: 25px; */
     background-color: burlywood;
     border-radius: 8px;
     border: none;
     color: black;
-    font-size: 19px;
+    font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-left: 25px;
-    margin-bottom: 100px;
+}
+
+.row11 select {
+    height: 50px;
+    width: 400px;
+    margin-right: 25px;
+    background-color: burlywood;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 25px;
     cursor: pointer;
 }
 
-.row3 button{
+.footer
+{
+    display: flex;
+    justify-content: center;
+}
+
+.footer button
+{
     width: 200px;
     height: 45px;
     background-color: orange;
     border-radius: 12px;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 800;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 40px;
     cursor: pointer;
-
+    margin-top: 50px;   
+    border: none;
 }
-
+.row4{
+    display: flex;
+    justify-content: center;
+}
 .row4 button{
     width: 50px;
     height: 50px;

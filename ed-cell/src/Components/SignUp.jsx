@@ -1,12 +1,18 @@
-import React from "react";
-import "./SignUp.css";
-import Navbar from './Navbar.jsx'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './SignUp.css';
+import Navbar from './Navbar.jsx';
+
 const SignUp = () => {
+  const navigate = useNavigate();
+
+  const handleNextClick = () => {
+    navigate('/details');
+  };
+
   return (
     
-
     <div className="signup">
-      
       <div className="header1">
         <p>Details Of</p>
         <h1>TEAM LEADER</h1>
@@ -27,7 +33,7 @@ const SignUp = () => {
           </select>
           <select>
             <option>Select Your Branch</option>
-            <option>Computer Science & Eng. </option>
+            <option>Computer Science & Eng.</option>
             <option>Computer Science & Technology</option>
             <option>Computer Eng.</option>
           </select>
@@ -42,16 +48,16 @@ const SignUp = () => {
           </select>
         </div>
         <div className="row3">
-          <button>Next to</button>
+          <button onClick={handleNextClick}>Next to</button>
         </div>
         <div className="row4">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-          
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
         </div>
       </div>
     </div>
   );
 };
+
 export default SignUp;
