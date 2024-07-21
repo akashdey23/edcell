@@ -11,7 +11,7 @@ const SignUp = () => {
   };
 
   return (
-    
+
     <div className="signup">
       <div className="header1">
         <p>Details Of</p>
@@ -34,8 +34,13 @@ const SignUp = () => {
           <select>
             <option>Select Your Branch</option>
             <option>Computer Science & Eng.</option>
-            <option>Computer Science & Technology</option>
+            <option>Electronics and Communication Eng.</option>
             <option>Computer Eng.</option>
+            <option>Computer Science & Technology</option>
+            <option>Electronics and Instrumentation Eng</option>
+            <option>M. Tech</option>
+            <option>MCA(Computer Application)</option>
+            <option>M. Sc. (Data Science)</option>
           </select>
         </div>
         <div className="row2">

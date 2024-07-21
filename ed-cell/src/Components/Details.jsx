@@ -29,9 +29,12 @@ const Details = () => {
         <input type="text" placeholder="Problem Statement (within 250 words)" />
         <select>
           <option>Select Problem Category</option>
-          <option>Computer Science & Eng.</option>
-          <option>Computer Science & Technology</option>
-          <option>Computer Eng.</option>
+          <option>Space Technology</option>
+          <option>Smart Automation</option>
+          <option>Clean & green Technology</option>
+          <option>Miscellaneous</option>
+          <option>Transporation & Logistics</option>
+          <option>Disaster Management</option>
         </select>
       </div>
       <div className="row2">
